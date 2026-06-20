@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego de Naves</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <h1>Juego de Naves</h1>
+    <p>Mueve con mouse o táctil y presiona espacio para disparar.</p>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="touchCursor" class="touch-cursor hidden"></div>
+    <div class="hud">
+      <span id="score">Puntaje: 0</span>
+      <span id="lives">Vidas: 3</span>
+    </div>
+    <div id="overlay" class="overlay hidden">
+      <div class="overlay-content">
+        <h2 id="overlayTitle">Juego terminado</h2>
+        <p id="overlayMessage">Presiona Enter para reiniciar.</p>
+        <button id="restartButton">Reiniciar</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
